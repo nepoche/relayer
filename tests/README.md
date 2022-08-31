@@ -1,9 +1,7 @@
 This folder hosts the integration tests of the relayer.
 The structure of this folder is like so:
 
-#### Lib
-
-This folder hosts
+lol readme
 
 #### test
 
