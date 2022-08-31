@@ -122,6 +122,8 @@ jobs:
       - name: Install NPM Packages.
         if: matrix.target == 'x86_64-unknown-linux-musl'
         run: cd tests && git submodule update --init --recursive && yarn
+      - name: Fetch DVC Fixtures
+        run: dvc pull
       - name: Pull Docker Images used for testing.
         run: docker pull ghcr.io/webb-tools/protocol-substrate-standalone-node:edge
       - name: Webb Relayer Integration tests.
