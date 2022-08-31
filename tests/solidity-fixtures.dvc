@@ -1,0 +1,12 @@
+md5: 3cfe260540578ca0056c662f6f9d8ca9
+frozen: true
+deps:
+- path: solidity-fixtures
+  repo:
+    url: https://github.com/nepoche/solidity-fixtures
+    rev_lock: 01c1a14bfdcbcc4300b46be92c99795c50e4a9c5
+outs:
+- md5: e7485024b69906420b038c0b68026f21.dir
+  size: 469133886
+  nfiles: 66
+  path: solidity-fixtures
