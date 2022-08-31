@@ -13,6 +13,8 @@ jobs:
   linux:
     runs-on: ubuntu-latest
     steps:
+      - name: Setup DVC
+        uses: iterative/setup-dvc@v1
       - name: Fetch DVC Fixtures
         run: dvc pull
       - name: Check DVC contents
