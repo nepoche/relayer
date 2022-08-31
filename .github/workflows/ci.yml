@@ -12,17 +12,8 @@ env:
 jobs:
   linux:
     runs-on: ubuntu-latest
-    needs: install-cross
     steps:
       - name: Fetch DVC Fixtures
         run: dvc pull
       - name: Check DVC contents
         run: ls tests/solidity-fixtures
-
-    strategy:
-      fail-fast: true
-      matrix:
-        channel: [stable]
-        target:
-          - aarch64-unknown-linux-musl
-          - x86_64-unknown-linux-musl
