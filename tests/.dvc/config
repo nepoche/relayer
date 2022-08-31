@@ -1,0 +1,4 @@
+[core]
+    remote = solidity-fixtures
+['remote "solidity-fixtures"']
+    url = https://github.com/nepoche/solidity-fixtures
